@@ -5,7 +5,7 @@ mod days;
 
 
 fn main() {
-    let selected_day: i32 = 3;
+    let selected_day: i32 = 4;
 
     println!("================================================\n\
     Welcome to Advent of Code 2024!\n\
@@ -24,6 +24,7 @@ fn main() {
         1 => days::day01::run(lines),
         2 => days::day02::run(lines),
         3 => days::day03::run(lines),
+        4 => days::day04::run(lines),
         _ => {
             println!("This day is not yet implemented");
             -1
