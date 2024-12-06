@@ -3,9 +3,8 @@ use std::time::Instant;
 
 mod days;
 
-
 fn main() {
-    let selected_day: i32 = 5;
+    let selected_day: i32 = 6;
 
     println!("================================================\n\
     Welcome to Advent of Code 2024!\n\
@@ -26,6 +25,7 @@ fn main() {
         3 => days::day03::run(lines),
         4 => days::day04::run(lines),
         5 => days::day05::run(lines),
+        6 => days::day06::run(lines),
         _ => {
             println!("This day is not yet implemented");
             -1
@@ -54,5 +54,5 @@ fn get_file_contents(day: i32) -> String {
 
     println!("File contents found!");
 
-    lines
+    lines.replace("\r", "")
 }

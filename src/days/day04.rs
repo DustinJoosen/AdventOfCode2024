@@ -112,6 +112,6 @@ fn part1(contents: String) -> i32 {
 }
 
 fn parse(contents: &str) -> Vec<&str> {
-	let parsed: Vec<&str> = contents.split("\r\n").collect();
+	let parsed: Vec<&str> = contents.split("\n").collect();
 	parsed[0..parsed.len() - 1].to_vec()
 }
