@@ -4,7 +4,7 @@ use std::time::Instant;
 mod days;
 
 fn main() {
-    let selected_day: i32 = 7;
+    let selected_day: i32 = 8;
 
     println!("================================================\n\
     Welcome to Advent of Code 2024!\n\
@@ -27,6 +27,7 @@ fn main() {
         5 => days::day05::run(lines),
         6 => days::day06::run(lines),
         7 => days::day07::run(lines),
+        8 => days::day08::run(lines),
         _ => {
             println!("This day is not yet implemented");
             -1
